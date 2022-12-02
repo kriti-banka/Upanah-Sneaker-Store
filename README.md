@@ -8,6 +8,6 @@ This project uses Node js framework and Handlebars view engine.
 
 2. Install express , hbs , path in the root folder.
 
-3. Now go into the src directory using 'cd src'.
+3. Now go into the src directory using `cd src`.
 
-4. Then run the command 'node index.js' in the terminal.
+4. Then run the command `node index.js` in the terminal.
