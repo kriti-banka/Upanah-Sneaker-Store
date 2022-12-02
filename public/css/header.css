@@ -1,0 +1,55 @@
+.logo
+{
+    width: 80px;
+    height: 80px;
+    opacity: .8;
+}
+.logo:hover
+{
+    opacity: 1;
+}
+.header 
+{
+    overflow: hidden;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header a 
+{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0 25px 0 25px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 35px;
+    font-family: "Nunito";
+}
+.tabs a:hover
+{
+    border-bottom: solid 3px #FFDE59;
+    color: #FFDE59;
+}
+
+body
+{
+    margin: 0;
+    
+}
+
+.icons img
+{
+    width: 20px;
+    opacity: .7;
+    /* border-right: 1px solid white; */
+}
+.icons img:hover
+{
+    opacity: 1;
+}

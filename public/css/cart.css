@@ -1,0 +1,122 @@
+body
+{
+    margin: 0px;
+    font-family: 'Nunito';
+}
+.container
+{
+    width: 90%;
+    margin-left: 5%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.left
+{
+    width: 55%;
+    /* background-color: bisque; */
+}
+.left:hover
+{
+    transform: scale(.95);
+    transition: .2s;
+    /* overflow: hidden; */
+
+}
+.right
+{
+    width: 35%;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    height: 20vw;
+    flex-direction: column;
+}
+.cartbox
+{
+    /* width: 100%; */
+    /* background-color: bisque; */
+    display: flex;
+    padding: 1%;
+    background-color: #F9F9F9;
+    border: 1px solid gray;
+    flex-direction: column;
+}
+.subtotal
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.shipping label
+{
+    font-size: small;
+}
+.total
+{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+}
+.amt
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.checkoutbutton
+{
+    background-color: black;
+    color: white;
+    height: 3vw;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.item
+{
+    width: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid gray;
+    padding: 1% 0%;
+}
+.item:hover
+{
+    transform: scale(1.1);
+    transition: .2;
+    overflow: hidden;
+}
+.item a 
+{
+    text-decoration: none;
+    color: black;
+}
+.img_container
+{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    /* background-color: blue; */
+    width:50%;
+    justify-content: space-evenly;
+}
+.img_container img 
+{
+    width: 4vw;
+}
+
+#del
+{
+    width: 1.2vw;
+    height: 1.2vw;
+}
+#del:hover
+{
+    transform: scale(1.2);
+    cursor: pointer;
+}

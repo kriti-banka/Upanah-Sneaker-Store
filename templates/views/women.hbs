@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/icons/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="stylesheet" href="/css/men.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <title>Women-Upanah </title>
+</head>
+
+<body>
+  {{>header}}
+
+  <div class="head">
+    <h1>Women</h1>
+    <!-- <button>Sort By</button> -->
+  </div>
+
+  <br>
+
+  <br>
+  <div class="container">
+
+    <div class="left_col">
+      <h3>Filters</h3>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="dropdown">
+        <button class="dropbtn">Filter By Brands ></button>
+        <div class="dropdown-content">
+          <a id="adidas" onclick="brand_func1()">Adidas</a>
+          <a id="nike" onclick="brand_func2()">Nike</a>
+          <a id="asics" onclick="brand_func3()">Asics</a>
+          <a id="converse" onclick="brand_func4()">Converse</a>
+          <a id="puma" onclick="brand_func5()">Puma</a>
+          <a id="vans" onclick="brand_func6()">Vans</a>
+          <a id="newb" onclick="brand_func7()">New Balance</a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="right_col">
+      <div class="fil">
+        <div class="any">
+          <h4>Search :</h4>
+          <input type="text" placeholder="Search by Brand" id="myinput" onkeyup="searchfunction()">
+        </div>
+      </div>
+
+      <div class="shoe_grid">
+        {{#each products}}
+        <a href="/product/{{pid}}" class="griditem allitem {{brand}} {{price}} ">
+          <div class="gridcard">
+            <img src="{{pi1}}">
+            <p>{{brand}}</p>
+            <h2>{{pname}}</h2>
+            <p>Rs. {{price}}</p>
+          </div>
+        </a>
+        {{/each}}
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- FOOTER -->
+  <script>
+    function brand_func1() {
+
+      var bra_adi = document.getElementById("adidas").innerText
+      console.log(bra_adi)
+
+      filter_brand(bra_adi)
+    }
+    function brand_func2() {
+
+      var bra_nik = document.getElementById("nike").innerText
+      console.log(bra_nik)
+
+      filter_brand(bra_nik)
+    }
+    function brand_func3() {
+
+      var bra_asi = document.getElementById("asics").innerText
+      console.log(bra_asi)
+
+      filter_brand(bra_asi)
+    }
+    function brand_func4() {
+
+      var bra_con = document.getElementById("converse").innerText
+      console.log(bra_con)
+
+      filter_brand(bra_con)
+    }
+    function brand_func5() {
+
+      var bra_pum = document.getElementById("puma").innerText
+      console.log(bra_pum)
+
+      filter_brand(bra_pum)
+    }
+    function brand_func6() {
+
+      var bra_van = document.getElementById("vans").innerText
+      console.log(bra_van)
+      filter_brand(bra_van)
+    }
+    function brand_func7() {
+
+      var bra_newb = document.getElementById("newb").innerText
+      console.log(bra_newb)
+
+      filter_brand(bra_newb)
+    }
+
+    function filter_brand(brand) {
+      var all = document.querySelectorAll(".allitem")
+      for (let i = 0; i < all.length; i++) {
+        if (all[i].classList[2].indexOf(brand) > -1) {
+          all[i].style.display = ""
+        }
+        else {
+          all[i].style.display = "none"
+        }
+      }
+    }
+
+    function searchfunction() {
+      var all = document.querySelectorAll(".allitem")
+      var brand = document.getElementById("myinput").value
+      for (let i = 0; i < all.length; i++) {
+        if (all[i].classList[2].indexOf(brand) > -1) {
+          all[i].style.display = ""
+        }
+        else {
+          all[i].style.display = "none"
+        }
+      }
+
+
+      //console.log(tr.length)
+    }
+  </script>
+
+  {{>footer}}
+
+
+
+</body>
+
+</html>

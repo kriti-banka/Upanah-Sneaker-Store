@@ -1,0 +1,403 @@
+.slideshow-container {
+    z-index: 0;
+    /* max-width: px; */
+    position: relative;
+    margin: auto;
+  }
+
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1}
+  }
+  .dot {
+    height: 8px;
+    width: 45px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 15%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active {
+  background-color: #717171;
+}
+
+.puma
+{
+  position: absolute;
+  top: 65%;
+  left: 17%;
+}
+.puma a
+{
+  width: 100px;
+  height: 40px;
+  background-color: #000000;
+  color: white;
+  font-family: "Nunito";
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.puma a:hover
+{
+  background-color: #99d19c;
+  color: black;
+  cursor: pointer;
+}
+
+.nike
+{
+  position: absolute;
+  top: 60%;
+  right: 16%;
+}
+
+.nike a
+{
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-family: 'Nunito';
+  text-decoration: none;
+}
+.nike a:hover
+{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.adidas
+{
+  position:absolute;
+  top: 55%;
+  right: 15%;
+  width: 5vw;
+  height: 5vw;
+}
+
+.adidas a
+{
+  width: 100px;
+  height: 40pxvw;
+  background-color: #FFBD59;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: 'Nunito';
+}
+
+.adidas a:hover
+{
+  background-color: #a4dea7;
+  cursor: pointer;
+}
+
+.newa
+{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Nunito';
+  margin-left: 20px;
+  box-shadow: #000000;
+  /* align-items: center; */
+}
+
+.newa a
+{
+  text-decoration: none;
+  color: #000000;
+}
+
+.imgcard img
+{
+  height: 20vw;
+  width: 20vw;
+}
+
+.imgcard h2 
+{
+  font-size: medium;
+}
+
+h1
+{
+  margin-left: 5vw;
+  font-family: 'Nunito';
+  font-weight: bold;
+}
+
+.jordan
+{
+  position: relative;
+}
+.jordan img 
+{
+  width: 100%;
+}
+
+.jordan button
+{
+  position:absolute;
+  top: 20vw;
+  right: 18vw;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #4792EA;
+  background-color: black;
+  color: #4792EA;
+}
+
+.jordan button:hover
+{
+  background-color: #4792EA;
+  color: white;
+  cursor: pointer;
+}
+
+.blockbuster
+{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Nunito';
+  margin-left: 20px;
+  transition: .2s;
+  box-shadow: #000000;
+  /* align-items: center; */
+}
+.blockbuster:hover
+{
+  transform: scale(.9);
+}
+
+.block_card img
+{
+  height: 20vw;
+  width: 20vw;
+}
+
+.block_card
+{
+  /* background-color: #000000; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+}
+.block_card h2 
+{
+  font-size: medium;
+}
+
+.blockbuster a
+{
+  text-decoration: none;
+  color: #000000;
+}
+.block_card:hover
+{
+ transform: scale(1.1);
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ transition: .5s;
+ border-radius: 10px;
+ background-color: #5E17EB;
+ color: #f7e438;
+}
+
+
+.brands
+{
+  display: flex;
+  /* justify-content: space-between; */
+  margin-left: 15vw;
+  /* overflow: hidden; */
+  /* margin-right: 10vw; */
+}
+
+.card_logo1
+{
+  /* border: 2px solid purple; */
+  padding: 15px 30px;
+  margin-left: 1vw;
+  /* padding-bottom: 3px; */
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.card_logo1:hover
+{
+  background-color: #ca7df9;
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.card_logo2
+{
+  /* border: 2px solid purple; */
+  padding: 15px 30px;
+  margin-left: 1vw;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid black;
+}
+
+.card_logo2:hover
+{
+  background-color: #f7e438;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.card_logo3
+{
+  /* border: 2px solid purple; */
+  padding: 15px 30px;
+  margin-left: 1vw;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.card_logo3:hover
+{
+  background-color: #ff7d00;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.card_logo4
+{
+  /* border: 2px solid purple; */
+  padding: 15px 30px;
+  margin-left: 1vw;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid black;
+}
+
+.card_logo4:hover
+{
+  background-color: #00E5E8;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.brand_head
+{
+  text-align: center;
+}
+
+.flip-card {
+  background-color: #f7e438;
+  width: 300px;
+  height: 300px;
+  /* border: 2px solid black; */
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+}
+
+
+
+.flip-card-back {
+  background-color: #5E17EB;
+  color:#f7e438;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.vuitton
+{
+  position: relative;
+}
+.vuitton img 
+{
+  width: 100%;
+}
+
+.vuitton button
+{
+  position:absolute;
+  top: 24vw;
+  right: 54vw;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid white;
+  background-color: #9975bb;
+  color: white;
+  font-weight: bold;
+}
+
+.vuitton button:hover
+{
+  background-color: white;
+  color: #9975bb;
+  cursor: pointer;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/product copy.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product-Upanah</title>
+</head>
+
+<body>
+{{>header}}
+    <br>
+    <br>
+    
+    <div class="container">
+      {{#each products}}
+      <div class="left-col">
+        
+        <h3>{{brand}}</h3>
+        <h2>{{pname}}</h2>
+        <p style="font-weight:bold;">Rs. {{price}}</p>
+        <p>{{desc}}</p>
+        
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="{{pi1}}" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="{{pi2}}" style="width:100%" onclick="currentSlide(2)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="{{pi3}}" style="width:100%" onclick="currentSlide(3)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="{{pi4}}" style="width:100%" onclick="currentSlide(4)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="{{pi5}}" style="width:100%" onclick="currentSlide(5)" alt="The Woods">
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    {{#each products}}
+      <div class="mid-col">
+        <div class="slide">
+        <img src="{{pi1}}">
+        </div>
+        <div class="slide">
+        <img src="{{pi2}}">
+        </div>
+        <div class="slide">
+        <img src="{{pi3}}">
+        </div>
+        <div class="slide">
+        <img src="{{pi4}}">
+        </div>
+        <div class="slide">
+        <img src="{{pi5}}">
+        </div>
+        
+        </div>
+        {{/each}}
+
+      <div class="right-col">
+
+        <h4>Size</h4>
+
+        <div class="size-button">
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>10</button>
+          <button>11</button>
+          <button>12</button>
+        </div>
+        <p>Size Chart</p>
+
+        <div class="star">
+          <p>Rating</p>
+        <div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+          </div>
+        </div>
+        <p style="line-height: 2vw;">100% Original Products<br>
+          Pay on delivery might be available<br>
+          Easy 30 days returns and exchanges<br>
+          Try & Buy might be available</p>
+
+        <div class="button_cont">
+          {{#each products}}
+        <form class="addtobag" action="/addtocart/{{pid}}&{{price}}" method="post">
+          <button type="submit">Add to Bag</button>
+        </form>
+        {{/each}}
+        </div>
+
+        <h5>Color</h5>
+        <div class="color">
+          <button style="background-color:black;"></button>
+          <button style="background-color:red;"></button>
+          <button style="background-color:green;"></button>
+          <button style="background-color:yellow;"></button>
+        </div>
+
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- FOOTER -->
+
+<div class="news_banner">
+  <h2>Subscribe to Our Newsletter 
+      And get 10% off</h2>
+  <button onclick="popuptoggle()">Subscribe</button>
+</div>
+
+<div id="popup">
+  <div class="content">
+    <img src="/images/icons/popup.png" class="upanah_spl">
+    <h2>Join our Newsletter</h2>
+    <p>Get 10% off after subscribing to our newsletter</p>
+    <input type="email" placeholder="Enter name" id="name_input">
+    <input type="email" placeholder="Enter Email" id="email_input">    
+    <input type="submit" value="Join" id="join_button">
+    <a onclick="popuptoggle()" style="cursor: pointer;"><img src="/images/icons/close.png" class="close"></a>
+  </div>
+</div>
+
+<div class="footer">
+  <img src="/images/icons/Upanah.png">
+  <div class="line">___________________</div>
+  <div class="foot_pages">
+    <span style="font-weight:bold;">Shop</span>
+    <a href="men.html"><span>Men</span></a>
+    <a href="women.html"><span>Women</span></a>
+    <a href="kids.html"><span>Kids</span></a>
+  </div>
+  <div class="foot_company">
+    <span style="font-weight:bold;">Company</span>
+    <a href="about.html"><span>About Us</span></a>
+    <a href="contact.html"><span>Contact Us</span></a>
+  </div>
+  <div class="social">
+    <p>Socials</p>
+    <div class="soc_icons">
+    <a href="https://www.facebook.com/"><img src="/images/icons/facebook (1).png"></a>
+      <a href="https://twitter.com/i/flow/login"><img src="/images/icons/twitter.png"></a>
+      <a  href="https://www.instagram.com/"><img src="/images/icons/instagram (1).png"></a>
+      <a  href="https://www.linkedin.com/feed/"><img src="/images/icons/linkedin.png"></a>
+      </div>
+  </div>
+  <div class="map">
+    <p>Visit Us</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.6704527028614!2d76.81143821408557!3d28.247680508147358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d478e1d59b7fb%3A0xb1787ccb5563c223!2sBML%20Munjal%20University%20(BMU)!5e0!3m2!1sen!2sin!4v1662551703513!5m2!1sen!2sin" 
+    width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+
+    
+        
+        <script src="/js/popup.js"></script>
+        <script>
+        let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("demo");
+            // let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            // captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+  
+      <!-- </div> -->
+</body>
+</html>

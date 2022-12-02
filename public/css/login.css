@@ -1,0 +1,192 @@
+body
+{
+    background-color: black;
+    font-family: "Nunito";
+}
+
+.row
+{
+    display: flex;
+    /* background-color: aquamarine; */
+    /* height: 50%; */
+}
+
+.col1
+{
+    width: 40%;
+    /* background-color: bisque; */
+}
+.col1 img
+{
+    width: 100%;
+}
+
+.col2
+{
+    width: 58%;
+    /* background-color: white; */
+    display: flex;
+    height: 56vw;
+
+    flex-direction: column;
+    padding: 0% 1%;
+}
+.row1
+{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    /* background-color: pink; */
+}
+.row2
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: center;
+}
+form
+{
+    /* background-color: black; */
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+#email
+{
+    height: 1.5vw;
+}
+#password
+{
+    height: 1.5vw;
+}
+form button
+{
+    height: 2.5vw;
+    border: 2px solid white;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+form button:hover
+{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+#signup
+{
+    height: 2.5vw;
+    width: 8vw;
+    border: 2px solid white;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+#signup:hover
+{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+#popup
+{
+  background-color: #000000;
+  position: fixed;
+  top: -100%;
+  color: white;
+  left: 50%;
+  width: 750px;
+  height: 450px;
+  /* padding: 10px; */
+  transform: translate(-50%,-50%);
+  font-family: 'nunito';
+  border: 3px solid #f7e438;
+  border-radius: 5px;
+  visibility: hidden;
+  transition: .5s;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.8);
+}
+#popup.active
+{
+  visibility: visible;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.content
+{
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.content form
+{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    
+    height: 80%;
+}
+
+#email_input
+{
+  background-color: #000000;
+  border: 3px solid #f7e438;
+  color: white;
+  font-weight: bold;
+  height: 1.5vw;
+  width: 15vw;
+}
+#password_input
+{
+
+  background-color: #000000;
+  border: 3px solid #f7e438;
+  color: white;
+  font-weight: bold;
+  width: 15vw;
+  height: 1.5vw;
+}
+#name_input
+{
+
+  background-color: #000000;
+  border: 3px solid #f7e438;
+  color: white;
+  font-weight: bold;
+  height: 1.5vw;
+  width: 15vw;
+}
+#join_button
+{
+
+  background-color: black;
+  border: 3px solid #f7e438;
+  font-weight: bold;
+  color: #f7e438;
+  height: 2vw;
+  width: 15vw;
+  
+}
+#join_button:hover
+{
+  cursor: pointer;
+  background-color: #f7e438;
+  
+  color: black;
+}
+.close
+{
+ 
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/login.css">
+    {{!-- <link rel="stylesheet" href="/css/footer.css"> --}}
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Login-Upanah</title>
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="col1">
+            <img src="/images/log1.webp">
+        </div>
+
+
+        <div class="col2">
+
+            <div class="row1">
+                <img src="/images/icons/Upanah.png">
+            </div>
+
+            <div class="row2">
+                <h1 style="font-family: 'Orbitron', sans-serif; ">Log into Upanah</h1>
+                <form>
+                    <label for="uname">Enter Email Address</label>
+                    <input type="email" name="uname" id="email">
+                    <br>
+                    <label for="pass">Enter Password</label>
+                    <input type="password" name="pass" id="password">
+                    <br>
+                    <button type="submit">Sign In</button>
+                </form>
+                <h4>----OR----</h4>
+                <h5> Doesn't have a account ?</h6>
+                    <button id="signup" onclick="popuptoggle()">Sign Up</button>
+
+                    <div id="popup">
+                        <div class="content">
+                            <h2>Sign Up</h2>
+                            <form action="">
+                            <input type="text" placeholder="Enter name" id="name_input">
+                            <input type="email" placeholder="Enter Email" id="email_input">
+                            <input type="password" placeholder="Enter Password" id="password_input">
+                            <input type="submit" value="Sign Up" id="join_button">
+                            </form>
+                        </div>
+                        <a onclick="popuptoggle()" style="cursor: pointer;"><img src="/images/icons/close.png"
+                                    class="close"></a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+<script src="/js/popup.js"></script>
+
+</body>
+
+</html>

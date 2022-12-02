@@ -1,0 +1,244 @@
+body
+{
+    font-family: 'Nunito';
+}
+
+.container
+{
+    display: flex;
+}
+.left_col
+{
+    width: 15%;
+    display: flex;
+    border-right: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #c31432; */
+    /* height: 100vw; */
+    /* position:-webkit-sticky */
+    /* background-color:#FAFAFA; */
+    /* padding: 1.5vw; */
+}
+.fil
+{
+    display: flex;
+    justify-content: right;
+    padding: 2vw;
+    align-items: center;
+    /* border-bottom: 1px solid black ; */
+}
+.any
+{
+    display: flex;
+    align-items: center;
+}
+.fil h4
+{
+    margin-right: 2vw;
+}
+.right_col
+{
+    width: 95%;
+    margin-left:2.5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+}
+.gender
+{
+    /* background-color: brown; */
+    /* width: 70%; */
+}
+.filter-gender
+{
+    font-size: medium;
+    display: flex;
+    align-items: center;
+}
+
+.size
+{
+    /* background-color: aquamarine; */
+}
+
+.filter-size
+{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+
+.brand
+{
+    /* background-color: bisque; */
+}
+
+.filter-brand
+{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+.filter-color
+{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+
+.colorcircle 
+{
+    width: .8vw;
+}
+
+.price
+{
+    font-size: medium;
+}
+
+
+.head
+{
+    /* background-color: aqua; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right,#c31432,#240b36); */
+    background-color: #000000;
+    padding: 0vw 3.5vw;
+}
+.head h1
+{
+    /* background-image:linear-gradient(to right,#f12711,#f5af19); */
+    background-image:linear-gradient(to right,#FF416C,#FF4B2B);
+    -webkit-background-clip: text;
+    font-size: 3vw;
+    -webkit-text-fill-color: transparent;
+}
+.head button
+{
+    background-color: white;
+    border: 2px solid black;
+    width: 10vw;
+    font-weight: bold;
+    height: 2vw;
+}
+
+.head button:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.shoe_grid
+{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.gridcard
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vw;
+    /* background-color: #FF4B2B; */
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 1vw;
+}
+.gridcard:hover
+{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.gridcard img
+{
+  height: 20vw;
+  width: 20vw;
+}
+
+.gridcard h2 
+{
+  font-size: medium;
+}
+
+.griditem
+{
+    text-decoration: none;
+    color: #000000;
+    width: 28%;
+
+}
+.dropbtn {
+    background-color: black;
+    /* color: white; */
+    color: #f1f1f1;
+    /* padding: 16px; */
+    font-weight: bold;
+    /* font-size: 16px; */
+    height: 2.5vw;
+    width: 10vw;
+    border: none;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color:black;
+    color: white;
+
+  }
+#myinput
+{
+    /* background-color: #000000; */
+    color: black;
+    border: 2px solid black;
+    height: 2vw;
+    text-align: center;
+    margin-right: 4vw;
+    border-radius: 20px;
+    font-weight: bold;
+}

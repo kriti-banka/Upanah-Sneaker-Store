@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="shortcut icon" href="/images/icons/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <!-- <script src="/js/home.js"></script> -->
+  <title>Upanah - Walk in Style</title>
+</head>
+
+<body>
+
+  {{>header}}
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="/images/adidas.png" style="width:100%">
+      <div class="adidas"><a href="/product/101">Shop Now</a></div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/images/hero3.png" style="width:100%">
+      <div class="puma"><a href="/product/103">Shop Now</a></div>
+    </div>
+    <div class="mySlides fade">
+      <img src="/images/hero1.png" style="width:100%">
+      <div class="nike"><a href="/product/104">Shop Now</a></div>
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+  </div>
+
+  <br>
+  <h1>New Arrivals</h1>
+  <br>
+
+  <!-- NEW ARRIVALS -->
+  <div class="newa">
+    {{#each (limit products 4)}}
+
+    <a href="/product/{{pid}}">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="{{pi1}}" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <p>{{brand}}</p>
+            <h2>{{pname}}</h2>
+            <p>Rs. {{price}}</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    {{/each}}
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- JORDAN -->
+
+  <div class="jordan">
+    <img src="/images/Jordan banner.png">
+    <button>Shop Jordan</button>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <h1>Blockbuster Deals</h1>
+  <br>
+
+  <!-- BLOCKBUSTER DEALS -->
+
+  <div class="blockbuster">
+
+    {{#each (from products 4 8)}}
+
+    <a href="/product/{{pid}}" class="linknewa">
+      <div class="block_card">
+        <img src="{{pi1}}">
+        <p>{{brand}}</p>
+        <h2>{{pname}}</h2>
+        <p>Rs. {{price}}</p>
+      </div>
+    </a>
+    {{/each}}
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="vuitton">
+    <img src="/images/vuitton.png">
+    <button>Shop Louis-Vuitton</button>
+  </div>
+  <br>
+  <br>
+  <br>
+  <h1 class="brand_head">Brands We Sell</h1>
+  <br>
+
+  <!-- BRANDS -->
+
+  <div class="brands">
+    <div class="card_logo1">
+      <img src="/images/Logos/jordan (2).png">
+    </div>
+    <div class="card_logo2">
+      <img src="/images/Logos/nike (1).png">
+    </div>
+    <div class="card_logo1">
+      <img src="/images/Logos/adidas (1).png">
+    </div>
+    <div class="card_logo2">
+      <img src="/images/Logos/asics.png">
+    </div>
+    <div class="card_logo3">
+      <img src="/images/Logos/benetton.png">
+    </div>
+    <div class="card_logo4">
+      <img src="/images/Logos/puma (2).png">
+    </div>
+    <div class="card_logo3">
+      <img src="/images/Logos/gucci.png">
+    </div>
+    <div class="card_logo4">
+      <img src="/images/Logos/fila.png">
+    </div>
+  </div>
+  <br>
+  <div class="brands">
+    <div class="card_logo2">
+      <img src="/images/Logos/louis-vuitton.png">
+    </div>
+    <div class="card_logo1">
+      <img src="/images/Logos/reebok-crossfit.png">
+    </div>
+    <div class="card_logo2">
+      <img src="/images/Logos/under.png">
+    </div>
+    <div class="card_logo1">
+      <img src="/images/Logos/balenciaga.png">
+    </div>
+    <div class="card_logo4">
+      <img src="/images/Logos/converse.png">
+    </div>
+    <div class="card_logo3">
+      <img src="/images/Logos/vans.png">
+    </div>
+    <div class="card_logo4">
+      <img src="/images/Logos/new.png">
+    </div>
+    <div class="card_logo3">
+      <img src="/images/Logos/prada.png">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <!-- FOOTER -->
+  {{>footer}}
+
+</body>
+
+</html>

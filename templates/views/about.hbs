@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us-Upanah</title>
+</head>
+<body>
+    
+    {{>header}}
+    <div class="row1">
+        <div class="col1">
+           
+        </div>
+        <div class="col2">
+
+        </div>
+    </div>
+
+    <div class="row2">
+        <div class="col3">
+           
+        </div>
+        <div class="col4">
+        
+        </div>
+        <div class="col5">
+            
+        </div>
+    </div>
+
+    <div class="row3">
+
+        <div class="col6">
+
+        </div>
+        <div class="col7">
+            
+            <div class="col8">
+                <div class="row4">
+                    
+                </div>
+
+                <div class="row5">
+                   
+                </div>
+            </div>
+            <div class="col9">
+             
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        async function loadaboutuspage()
+        {
+            let request=new Request("/json/about.json")
+            let response=await fetch(request)
+            let json_obj=await response.json()
+            // alert("hello")
+            loadtopcol1(json_obj)
+            loadtopcol2(json_obj)
+            loadtopcol3(json_obj)
+            loadtopcol4(json_obj)
+            loadtopcol6(json_obj)
+            loadtoprow4(json_obj)
+            loadtoprow5(json_obj)
+            loadtopcol9(json_obj)
+
+        }
+
+        let col_1=document.querySelector(".col1")
+
+        function loadtopcol1(col1_obj)
+        {
+            let h1=document.createElement("h2")
+            h1.textContent=col1_obj["head"]
+            col_1.appendChild(h1)
+
+            let p=document.createElement("p")
+            p.textContent=col1_obj["description"]
+            col_1.appendChild(p)
+        }
+
+        let col_2=document.querySelector(".col2")
+
+        function loadtopcol2(col2_obj)
+        {
+            let image=document.createElement("img")
+            image.src=col2_obj.gallery[0]
+
+            col_2.appendChild(image)
+        }
+       
+        let col_3=document.querySelector(".col3")
+
+        function loadtopcol3(col3_obj)
+        {
+            let h3=document.createElement("h1")
+            h3.textContent=col3_obj["about"]
+            col_3.appendChild(h3)
+        }
+
+        let col_4=document.querySelector(".col4")
+        function loadtopcol4(col4_obj)
+        {
+            let h4=document.createElement("p")
+            h4.textContent=col4_obj["para"]
+            col_4.appendChild(h4)
+        }
+
+        let col_6=document.querySelector(".col6")
+
+        function loadtopcol6(col6_obj)
+        {
+            let image=document.createElement("img")
+            image.src=col6_obj.gallery[1]
+            col_6.appendChild(image)
+        }
+        
+        let row_4=document.querySelector(".row4")
+        function loadtoprow4(row4_obj)
+        {
+            let image=document.createElement("img")
+            image.src=row4_obj.gallery[2]
+            row_4.appendChild(image)
+
+            let image1=document.createElement("img")
+            image1.src=row4_obj.gallery[4]
+            row_4.appendChild(image1)
+        }
+
+        let row_5=document.querySelector(".row5")
+        function loadtoprow5(row5_obj)
+        {
+            let image=document.createElement("img")
+            image.src=row5_obj.gallery[3]
+            row_5.appendChild(image)
+        }
+
+        let col_9=document.querySelector(".col9")
+        function loadtopcol9(col9_obj)
+        {
+            let h9=document.createElement("h1")
+            h9.textContent=col9_obj["team"]
+            col_9.appendChild(h9)
+        }
+
+
+        loadaboutuspage()
+        
+    </script>
+
+    {{>footer}}
+    
+  <script src="/js/popup.js"></script>
+</body>
+</html>

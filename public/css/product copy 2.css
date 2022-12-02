@@ -1,0 +1,234 @@
+body
+{
+    font-family: 'nunito';
+}
+.container
+{
+    width: 94%;
+    display:flex;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: space-evenly;
+    /* background-color: blueviolet; */
+    /* margin-right: 5%; */
+}
+.left-col
+{
+    width: 27%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: aqua; */
+}
+
+.mid-col
+{
+    width: 46%;
+    position: relative;
+    /* background-color: aquamarine; */
+    padding:1%;
+}
+.slide
+{
+    /* background-color: red; */
+    /* padding: 1%; */
+    display: none;
+}
+.slide img
+{
+    width: 95%;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+    cursor: pointer;
+  }
+  .column img
+  {
+    width: 100%;
+    opacity: 0.6;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+
+  .active,
+  .column img:hover {
+    opacity: 1;
+  }
+ 
+  .right-col
+{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.size-button
+{
+    /* background-color: aqua; */
+    height: 2vw;
+}
+.size-button button
+{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 10%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+.size-button button:hover
+{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.right-col p
+{
+    font-size: small;
+}
+.checked
+{
+  color: orange;
+}
+.star
+{
+  display: flex;
+  align-items: center;
+  /* justify-content: */
+}
+.star p
+{
+  flex-grow: .1;
+  font-size: small;
+  font-weight: bold;
+}
+
+.addtobag button
+{
+  background-color:white;
+  border: 2px solid black;
+  color:black;
+font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5vw;
+  width: 100%;
+}
+.addtobag button:hover
+{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.addtobag img
+{
+  width: 1vw;
+  height: 1vw;
+}
+.addtobag p
+{
+  flex-grow: .05;
+}
+.button_cont
+{
+  display: flex;
+  /* background-color: aqua; */
+  flex-direction: column;
+  /* padding: 2vw; */
+  height: 7vw;
+  justify-content: space-evenly;
+}
+.color{
+  display:flex;
+  /* padding: vw; */
+  /* background-color: aqua; */
+  width: 50%;
+  justify-content: space-between;
+}
+
+.color button{
+  border-radius: 50%;
+  height: 2vw;
+  width: 2vw;
+  opacity: .7;
+  border: none;
+}
+.color button:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.blockbuster
+{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Nunito';
+  margin-left: 20px;
+  box-shadow: #000000;
+  /* align-items: center; */
+}
+h1
+{
+  margin-left: 5vw;
+  font-family: 'Nunito';
+  font-weight: bold;
+}
+.block_card img
+{
+  height: 20vw;
+  width: 20vw;
+}
+
+.block_card h2 
+{
+  font-size: medium;
+}
+
+.blockbuster a
+{
+  text-decoration: none;
+  color: #000000;
+}
+

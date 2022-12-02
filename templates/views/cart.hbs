@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="shortcut icon" href="/images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Cart</title>
+</head>
+
+<body>
+    {{>header}}
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="left">
+            {{#each products}}
+            <div class="item">
+                <!-- <a href="/product copy.html"> -->
+                <div class="img_container">
+                    <img src="{{pi1}}">
+                    <p>{{pname}}</p>
+                </div>
+                <form action="/deletecart/{{pid}}" method="post">
+                    <button type="submit">
+                        <img src="/images/icons/delete.png" id="del">
+                    </button>
+                </form>
+
+
+                <h5>Rs. {{price}}</h5>
+            </div>
+            {{/each}}
+
+        </div>
+
+        <div class="right">
+
+            <div class="cartbox">
+
+                <div class="subtotal">
+                    <h5>Subtotal</h5>
+                    <div class="sub">
+                        {{#each products}}
+                        <h5 class="tot">{{price}}</h5>
+                        {{/each}}
+                    </div>
+                </div>
+
+                <div class="shipping">
+                    <h5>Shipping</h5>
+                    <input type="radio" name="ship" id="" checked>
+                    <label for="ship">Free Shipping</label>
+                </div>
+                <div class="total">
+                    <h4>Total</h4>
+                    <div class="amt">
+                        <h4 id="totalprice"></h4>
+                        <h7 id="gst"></h7>
+                    </div>
+                </div>
+            </div>
+
+            <button class="checkoutbutton">Proceed to Checkout</button>
+
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    {{>footer}}
+
+    <script>
+        var sum=0
+        var gst=0
+        let gst1=document.getElementById("gst")
+        
+        var tot = document.querySelectorAll(".tot")
+        let price = document.getElementById("totalprice")
+        for(let j=0;j<tot.length;j++)
+        {
+            var x=parseInt(tot[j].innerHTML)
+            console.log(x)
+           sum=(sum+x)
+        }
+        price.innerHTML=sum
+        gst = (sum*0.09)
+        gst1.innerHTML=("(includes "+gst+" 9% CGST, "+gst+" 9% SGST)")
+    </script>
+</body>
+
+</html>
