@@ -2,9 +2,10 @@
 This is a Sneaker store ecommerce website project built using HTML CSS and Javascript.
 This project uses Node js framework and Handlebars view engine.
 
+
 # Steps to Run the Project
 
-1. Clone the Repository(Make sure you have node js installed already)
+1. <font color="green"> Clone the Repository (Make sure you have node js installed already)</font>
 
 2. Install express , hbs , path in the root folder.
 
